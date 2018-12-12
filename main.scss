@@ -161,7 +161,10 @@ article p {
   text-align: center;
 }
 
+
+
 @media all and (min-width: 600px) {
+
   .bgi {
     height: 40%;
 
@@ -176,6 +179,11 @@ article p {
 }
 
 @media all and (min-width: 1024px) {
+
+  .dropNav {
+    display:none;
+  }
+
   .section {
     display: none;
   }

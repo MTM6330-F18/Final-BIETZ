@@ -5,7 +5,7 @@
   background-color: #272626af;
   display: flex;
   height: 90px;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   /* Position the navbar at the top of the page */
   width: 100%;
@@ -20,17 +20,23 @@
 
   .logo {
     flex-grow: 1;
-    height: 100%;
+    height: 50px;
     align-items: center;
     display: flex;
     padding-left: 1rem;
 
+
     img {
-      height: calc(100% - 1.5rem);
+      height: 50px;
       width: auto;
     }
   }
 }
+
+.dropNav {
+  padding-right: 1rem;
+}
+
 
 @media all and (max-width: 1023px) {
   .menu-item {
@@ -86,8 +92,21 @@
   }
 }
 
+// Footer
+footer {
+  background-color: #292929;
+  img {
+    padding-top: 10px;
+    height: 100px;
+  }
+}
+
 // Desktop View //
 @media all and (min-width: 1024px) {
+
+  .burgernav {
+    display: none;
+  }
 
   .navbar {
     .nav {
