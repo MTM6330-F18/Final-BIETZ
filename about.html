@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>Navbar Demo</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  <title>About Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </head>
 
 <body>
   <div class="bgi">
@@ -17,11 +22,20 @@
         <img src="./images/logo.png" alt="">
       </div>
 
-      <div class="section">
-        <a href="#" class="menu-btn">
-          <span></span>
-        </a>
-      </div>
+      <!--Drop Down Menu from W3Schools: https://www.w3schools.com/bootstrap/bootstrap_ref_comp_dropdowns.asp--><div class="dropNav">                                        
+          <div class="dropdown">
+            <button class="btn btn-default" type="button" id="menu1" data-toggle="dropdown">Menu
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./index.html">Home</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./about.html">About</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./classes.html">Classes</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./teachers.html">Teachers</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
 
       <nav class="nav">
         <div class="menu-item"> <a href="./index.html">Home</a></div>
@@ -33,7 +47,7 @@
     </div>
     <div class="text">
       <h2>Interactive Media Design</h2>
-      <div class="button"><a href="#">More Info</a></div>
+      <div class="button"><a href="./about.html">More Info</a></div>
     </div>
   </div>
   <div class="content">
@@ -48,7 +62,7 @@
       </div>
       <br>
       <div class="aboutBox">
-        <img class="img" src="https://via.placeholder.com/350x200" alt="">
+        <img class="img" src="./images/content-image-2.jpeg" alt="">
         <p>The Algonquin College School of Media and Design is
           an innovative and forward-thinking learning
           environment that fosters independent decision-making,
@@ -59,7 +73,7 @@
           and multi-faceted industry environments.</p>
       </div>
       <div class="aboutBox">
-        <img class="img" src="https://via.placeholder.com/350x200" alt="">
+        <img class="img" src="./images/content-image-1.jpeg" alt="">
         <p>Bring Your Own Device (BYOD): Students are expect-
           ed to have and use a laptop or mobile computing
           device when registered in this on-campus program.
@@ -73,5 +87,9 @@
   </div>
 
 </body>
-
+<footer>
+    <center>
+        <img class="footerLogo" src="./images/logo.png" alt="">
+    </center>
+  </footer>
 </html>

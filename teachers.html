@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>Navbar Demo</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  <title>Teachers Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </head>
 
 <body>
   <div class="bgi">
@@ -17,11 +22,20 @@
         <img src="./images/logo.png" alt="">
       </div>
 
-      <div class="section">
-        <a href="#" class="menu-btn">
-          <span></span>
-        </a>
-      </div>
+     <!--Drop Down Menu from W3Schools: https://www.w3schools.com/bootstrap/bootstrap_ref_comp_dropdowns.asp--> <div class="dropNav">                                        
+          <div class="dropdown">
+            <button class="btn btn-default" type="button" id="menu1" data-toggle="dropdown">Menu
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./index.html">Home</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./about.html">About</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./classes.html">Classes</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./teachers.html">Teachers</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
 
       <nav class="nav">
         <div class="menu-item"> <a href="./index.html">Home</a></div>
@@ -33,7 +47,7 @@
     </div>
     <div class="text">
       <h2>Interactive Media Design</h2>
-      <div class="button"><a href="#">More Info</a></div>
+      <div class="button"><a href="./about.html">More Info</a></div>
     </div>
   </div>
   <div class="content">
@@ -49,7 +63,7 @@
       <br>
       <!-- Teacher 1 -->
       <div class="teacher">
-        <div class="teacherPic"><img src="./images/comp1.png" alt=""></div>
+        <div class="teacherPic"><img src="./images/michael.png" alt=""></div>
         <div class="teacherContent">
           <div class="teacherHeader">
             <h3>Michael Eisenbraun - Server-Side/Client-Side</h3>
@@ -81,68 +95,36 @@
       </div>
       <!-- Teacher 2 -->
       <div class="teacher teacher2">
-        <div class="teacherPic"><img src="./images/comp1.png" alt=""></div>
+        <div class="teacherPic"><img src="./images/ruffino.png" alt=""></div>
         <div class="teacherContent">
           <div class="teacherHeader">
-            <h3>Michael Eisenbraun - Server-Side/Client-Side</h3>
+            <h3>I'm Rufino R. Ansara  - UX Design</h3>
           </div>
           <div class="teacherBio">
-            <p>My name is Michael Eisenbraun and I am currently a part-time professor at Algonquin
-              College for the Interactive Media and Design program. I teach Client-Side Web Development in Level 2 and
-              Server-Side Web Development in Level 3.
+            <p>I'm Rufino R. Ansara - a graduate of Carleton and Algonquin's joint IMD program and Carleton's Master's of Applied Science: Human Computer Interaction (HCI). I'm currently working for the Government of Canada as an IT Analyst, but I taught UX Design at Algonquin College in Winter 2018. I've also worked as a Software Developer in a small startup, and have had the opportunity to teach at Carleton University, specifically Introduction to Multimedia and Design (Fall 2016 and 2017), Design Studio I (Winter 2018) and 3D Computer Graphics (Winter 2018).
 
-              I am largely self-taught and constantly striving to learn more. The field of web design and development
-              is
-              ever-changing and if you don’t keep moving, you will fall behind. It is this realization that led me to
-              start
-              teaching at Algonquin College in January of 2016. I have a passion for learning and it fuels my desire to
-              share what I know with others. It has become my new passion and my primary focus. I aim to be the best
-              teacher I can, and it is my hope that my students will find the same spark of curiosity that changed my
-              life
-              all those years ago.
-
-              Many students who join the IMD program, do so for the video and design. So they are often caught off
-              guard
-              by
-              the amount of programming required. While I don’t expect students to have prior programming experience, I
-              would like perspective students to know that programming is taught in IMD and that they don’t have afraid
-              of
-              it. Anyone can learn to program if they are willing to try.</p>
+                Like many IMD students, I joined the program hoping to become a specialist in video editing and special effects - but I quickly learned programming was a big part of the field. I was originally afraid, but I eventually realized that the best aspect of being an IMD student was our versatility: we know how to design, we know how to program and thus, are often excellent at bridging those two worlds. This is a critical skill in the current job market. That's something I encourage you to remember when you struggle with the broad skill set required to excel in all the courses in the program: it will eventually pay off!</p>
           </div>
         </div>
       </div>
       <!-- Teacher 3 -->
       <div class="teacher">
-        <div class="teacherPic"><img src="./images/comp1.png" alt=""></div>
+        <div class="teacherPic"><img src="./images/hussein.png" alt=""></div>
         <div class="teacherContent">
           <div class="teacherHeader">
-            <h3>Michael Eisenbraun - Server-Side/Client-Side</h3>
+            <h3>Hussein Tyranni - Motion Graphics/Content Managment Systems</h3>
           </div>
           <div class="teacherBio">
-            <p>My name is Michael Eisenbraun and I am currently a part-time professor at Algonquin
-              College for the Interactive Media and Design program. I teach Client-Side Web Development in Level 2 and
-              Server-Side Web Development in Level 3.
-
-              I am largely self-taught and constantly striving to learn more. The field of web design and development
-              is
-              ever-changing and if you don’t keep moving, you will fall behind. It is this realization that led me to
-              start
-              teaching at Algonquin College in January of 2016. I have a passion for learning and it fuels my desire to
-              share what I know with others. It has become my new passion and my primary focus. I aim to be the best
-              teacher I can, and it is my hope that my students will find the same spark of curiosity that changed my
-              life
-              all those years ago.
-
-              Many students who join the IMD program, do so for the video and design. So they are often caught off
-              guard
-              by
-              the amount of programming required. While I don’t expect students to have prior programming experience, I
-              would like perspective students to know that programming is taught in IMD and that they don’t have afraid
-              of
-              it. Anyone can learn to program if they are willing to try.</p>
+            <p>My name is Hussein Tyranni, and I am a part-time professor at Algonquin College in the Interactive Media and Design program. I primarily teach Motion Graphics in level 3, and Content Management Systems I and II, in levels 2 and 4 respectively. 
+                I was actually once a student of Interactive Media Design, learning the same things you would be learning in this program. Back then, it was called, “Interactive Multimedia Development”. After graduating, I went on to do a bit of everything. I worked full-time, then as a contractor, at an international media company that worked in web design, media, digital signage, and music. Last year, I started my own business working as a remote automotive servicer as well. All on top of that, I have worked freelance for the past 10 years.
+                If I had to give any piece of advice, it would be to ask yourself, “Is this really what you want to do?” This program is fantastic for teaching you multiple facets of media and web design, and in great detail as well. However, nearing the end of the program, you should pretty much have already decided where your focus is going to be. You have to niche.</p>
           </div>
         </div>
       </div>
 </body>
-
+<footer>
+    <center>
+        <img class="footerLogo" src="./images/logo.png" alt="">
+    </center>
+  </footer>
 </html>
