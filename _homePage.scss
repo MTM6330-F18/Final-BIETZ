@@ -1,0 +1,79 @@
+.sectionOne {
+  padding: 0 5%;
+}
+
+.contentTwoIMG {
+  padding: 0 10% 3rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.contentThreeIMG {
+  padding: 0 10%;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+// Deasktop View
+@media all and (min-width: 1024px) {
+  .sectionOne {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 15%;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .contentTwoIMG {
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns: 1fr 1fr;
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      grid-row-start: 2;
+    }
+
+    img {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .contentThreeIMG {
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 10rem;
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      grid-row-start: 2;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
