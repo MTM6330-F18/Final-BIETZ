@@ -1,0 +1,21 @@
+.aboutBox {
+  padding: 1rem 3rem 3rem;
+
+  img {
+    width: 90%;
+    max-width: 30rem;
+  }
+}
+
+// Deasktop View
+@media all and (min-width: 1024px) {
+  .aboutBox {
+    padding: 1rem 5rem 3rem;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+
+    p {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.yearTitle {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.year {
+  .yearBody {
+    padding: 0 5% 3rem;
+    background-color: rgb(212, 212, 212);
+
+    .courseCode {
+      display: grid;
+      text-align: center;
+      grid-template-columns: 10rem 10rem 1fr;
+
+      h3 {
+        margin: 0.5rem;
+        background-color: #777;
+        color: white;
+      }
+    }
+
+    .courseName {
+      h2 {
+        padding: 5px 0;
+        color: white;
+        background-color: #777;
+        width: 98%;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .yearBody {
+    padding: 0 20rem 3rem !important;
+  }
+}

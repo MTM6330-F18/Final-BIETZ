@@ -1,0 +1,128 @@
+.navbar {
+  z-index: 1;
+  color: #fff;
+  align-items: center;
+  background-color: #272626af;
+  display: flex;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  .logo {
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding-left: 1rem;
+
+    img {
+      height: calc(100% - 1.5rem);
+      width: auto;
+    }
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .menu-item {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 1rem;
+
+    span {
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      left: 50%;
+      margin-left: -10px;
+      width: 20px;
+      height: 2px;
+      background-color: #222;
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #222;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        transition: 0.2s;
+      }
+
+      &::before {
+        transform: translateY(-5px);
+      }
+
+      &::after {
+        transform: translateY(5px);
+      }
+    }
+  }
+}
+
+// Desktop View //
+@media all and (min-width: 1024px) {
+
+  .navbar {
+    .nav {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      .active {
+        border-bottom: 2px solid #fff;
+      }
+
+      .menu-item {
+        flex-grow: 1;
+        letter-spacing: 0.5px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #f0f0f0;
+          cursor: pointer;
+          color: #000;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

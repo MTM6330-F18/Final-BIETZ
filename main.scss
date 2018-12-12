@@ -1,0 +1,202 @@
+@import 'baselineReset';
+@import 'nav';
+@import 'homePage';
+@import 'aboutPage';
+@import 'classesPage';
+@import 'teacherPage';
+@import 'contactPage';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.78);
+  font-size: 100%;
+  line-height: 1.64rem;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  h1 {
+    color: #fff;
+  }
+
+  article {
+    margin: 0;
+
+    .img {
+      display: flex;
+      margin: 0 auto;
+      margin-top: 1rem;
+      box-shadow: 4px 4px 7px #666;
+    }
+  }
+
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    .line {
+      background-color: #000;
+      width: 20%;
+      height: 2px;
+    }
+
+    h2 {
+      width: 33%;
+    }
+  }
+
+  .contenttwo {
+    margin-top: 2rem;
+    background-color: rgb(206, 206, 206);
+
+    article img {
+      width: 100%;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.bgi {
+  background-image: url(./images/header_image.jpg);
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+
+  h2 {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #191919;
+  }
+}
+
+.text {
+  padding: 60% 20%;
+}
+
+.button {
+  text-align: center;
+
+  a {
+    background-color: #126042;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 15px;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+
+.floatClear {
+  clear: both;
+}
+
+#wrapper {
+  text-align: center;
+  position: relative;
+
+  .line {
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+    top: 15px;
+  }
+
+  .textbox {
+    position: absolute;
+    width: 100%;
+
+    .title {
+      background-color: white;
+      margin: 0 auto;
+      padding: 5px 10px 10px;
+      text-align: center;
+      display: inline;
+      font-size: 2rem;
+    }
+
+    .greyTitle {
+      background-color: rgb(206, 206, 206);
+    }
+  }
+}
+
+article p {
+  margin: 1rem;
+  text-align: center;
+}
+
+@media all and (min-width: 600px) {
+  .bgi {
+    height: 40%;
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .text {
+    padding: 35% 20%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .section {
+    display: none;
+  }
+
+  .text {
+    padding: 20%;
+  }
+
+  .bgi h2 {
+    font-size: 40px;
+  }
+
+  .button a {
+    font-size: 25px;
+  }
+
+  .active {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */

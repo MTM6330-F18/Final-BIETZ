@@ -1,0 +1,40 @@
+.teacher {
+  padding: 3rem;
+
+  .teacherPic {
+    width: 100%;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 20rem;
+    }
+  }
+
+  .teacherContent {
+    p {
+      text-align: left !important;
+    }
+  }
+}
+
+.teacher2 {
+  background-color: rgb(226, 226, 226);
+}
+
+// Deasktop View
+@media all and (min-width: 1024px) {
+  .teacher {
+    display: grid;
+    grid-template-columns: 3rem 1fr 4fr 3rem;
+
+    .teacherPic {
+      grid-column-start: 2;
+    }
+
+    .teacherContent {
+      grid-column-start: 3;
+    }
+  }
+}
